@@ -78,6 +78,8 @@ def main():
     time.sleep(1)
     grab()
     controlArm(0.15,0.15,0.1)
+    time.sleep(2)
+    controlArm(0.05,-0.1,0.1)
     time.sleep(1)
     
 main()
