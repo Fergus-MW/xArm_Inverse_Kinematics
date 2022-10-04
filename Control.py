@@ -20,6 +20,7 @@ my_chain.plot(my_chain.inverse_kinematics([2, 2, 2]), ax)
 matplotlib.pyplot.show()
 
 def sendAngles(angles):
+    angles = [float(item) for item in angles]
     arm = xarm.Controller('USB')
     arm.setPosition(6, angles[1])
     time.sleep(0.01)
@@ -54,3 +55,30 @@ def grab():
 def release():
     arm = xarm.Controller('USB')
     arm.setPosition(1,0)
+    
+def main():
+    release()
+    controlArm(0,0,0.1)
+    time.sleep(1)
+    controlArm(0.2,0,0.1)
+    time.sleep(1)
+    controlArm(0.2,0,0.2)
+    time.sleep(1)
+    controlArm(0,0.2,0.1)
+    time.sleep(1)
+    controlArm(0,0.1,0.1)
+    time.sleep(1)
+    controlArm(-0.2,0,0.1)
+    time.sleep(1)
+    controlArm(-0.2,0,0.2)
+    time.sleep(1)
+    controlArm(0,0,0.3)
+    time.sleep(1)
+    controlArm(0,0,0.15)
+    time.sleep(1)
+    grab()
+    controlArm(0.15,0.15,0.1)
+    time.sleep(1)
+    
+main()
+    

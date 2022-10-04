@@ -170,7 +170,7 @@
     </joint>
 
     <joint name="xarm_4_joint" type="revolute">
-        <origin rpy="0 0 0" xyz="0 0.0 0.09765" />
+        <origin rpy="0 0 0" xyz="0 0.0 0.09824" />
         <axis xyz="1 0 0" />
         <limit effort="1000" lower="-1.910427965" upper="1.910427965" velocity="1.0" />
         <!--safety_controller k_position="30" k_velocity="30" soft_lower_limit="-2.93215314335" soft_upper_limit="2.93215314335"/>
@@ -180,7 +180,7 @@
     </joint>
 
     <joint name="xarm_3_joint" type="revolute">
-        <origin rpy="0 0 0" xyz="0 0.0 0.09825" />
+        <origin rpy="0 0 0" xyz="0 0.0 0.0944" />
         <axis xyz="1 0 0" />
         <limit effort="1000" lower="-1.740612146" upper="1.86797401" velocity="1.0" />
         <!--safety_controller k_position="30" k_velocity="30" soft_lower_limit="-2.93215314335" soft_upper_limit="2.93215314335"/>
@@ -190,7 +190,7 @@
     </joint>
 
     <joint name="xarm_2_joint" type="revolute">
-        <origin rpy="0 0 0" xyz="0 -0.001205 0.05306" />
+        <origin rpy="0 0 0" xyz="0 -0.001205 0.135" />
         <axis xyz="0 0 1" />
         <limit effort="1000" lower="-2.17494876" upper="1.63121157" velocity="1.0" />
         <!--safety_controller k_position="30" k_velocity="30" soft_lower_limit="-2.93215314335" soft_upper_limit="2.93215314335"/>
